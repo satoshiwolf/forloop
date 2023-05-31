@@ -8,7 +8,7 @@ import useSWR from "swr";
 export default function Pricing() {
   const { data: session } = useSession();
 
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
+  const fetcher = (url) => fetch(url).then((res) => res.json());
   const { data } = useSWR("/api/remaining", fetcher);
 
   return (

@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
 
-const Home: NextPage = () => {
+function Home() {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
@@ -16,14 +16,14 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 background-gradient">
-        <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
+        <h2 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
           Una agencia sobre{" "}
           <span className="relative whitespace-nowrap text-blue-600">
             <SquigglyLines />
             <span className="relative">Software</span>
           </span>{" "}
           para todos.
-        </h1>
+        </h2>
         <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-gray-400  text-gray-500 leading-7">
             Potencia tu negocio con nuestra agencia de software. Desarrollo web, aplicaciones móviles y sistemas empresariales a medida. ¡Transformamos tus ideas en éxito digital!
         </h2>
